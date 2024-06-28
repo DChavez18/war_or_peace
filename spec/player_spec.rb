@@ -18,7 +18,7 @@ RSpec.describe Player do
   end
 
   it "can determine if player has lost" do
-    deck = Deck.new
+    deck = Deck.new([])
     player = Player.new('Clarisa', deck)
 
     expect(player.has_lost?).to eq(true)
