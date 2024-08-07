@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>War Card Game</title>
+  <style>
+    /* Basic styles for the game UI */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+    .player-area {
+      margin-bottom: 20px;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>War Card Game</h1>
+
+  <div class="player-area">
+    <h2 id="player1-name">Player 1</h2>
+    <p id="player1-cards">Cards left: 26</p>
+    <p id="player1-last-draw">Last draw: </p>
+  </div>
+
+  <div class="player-area">
+    <h2 id="player2-name">Player 2</h2>
+    <p id="player2-cards">Cards left: 26</p>
+    <p id="player2-last-draw">Last draw: </p>
+  </div>
+
+  <div id="game-status"></div>
+
+  <div class="buttons">
+    <button id="next-turn-button">Next Turn</button>
+  </div>
+
+  <!-- Link to the JavaScript file -->
+  <script src="app.js"></script>
+</body>
+</html>
