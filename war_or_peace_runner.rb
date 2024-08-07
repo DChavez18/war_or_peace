@@ -69,6 +69,9 @@ loop do
   puts "Player 2 has #{player2.deck.cards.count} cards left"
 
   turn_count += 1
+
+  puts "Press Enter to continue..."
+  gets
 end
 
 if player1.has_lost?
